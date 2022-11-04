@@ -1,0 +1,233 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    height: 80px;
+}
+
+.menu__header {
+    display: flex;
+    width: 313px;
+}
+
+.menu__header h3 {
+    margin-left: 10px;
+
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    width: 643px;
+}
+
+/*Sección Title*/
+.title{
+    background-color: lightsteelblue;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.title__profile {
+    border-radius: 50%;
+}
+
+.title__container {
+    width: 60%;
+}
+
+.title__network {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0px;
+}
+
+/*Sección About*/
+
+section.about {
+    background-color: lightgray;
+    padding: 64px;
+
+}
+
+.about__container {
+    background: url(assets/portada.jpg) center / cover;
+    opacity: 0.6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 64px;
+    text-decoration: solid;
+    font-size: 25px;
+    gap: 10px;
+
+}
+
+.about__title {
+    text-align: start;
+    color: #F5F5F5;
+}
+
+.about__paragraph {
+    color: #F5F5F5;
+}
+
+/*Sección Skill*/
+.skills {
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.skills__title h3 {
+    text-align: center;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.skills__box {
+  background-color: lightblue;
+    width: 176px;
+    height: 174px;
+    padding: 0px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+/*Sección Hobbies*/
+
+section.hobbies {
+    background: #F5F5F5;
+}
+
+/* Experiencia Académica*/
+
+section.academic {
+    background: #EAF2FD;
+    
+}
+
+/* experiencia*/
+
+section.experience {
+    background-color: lightgray;
+}
+
+/*Contacto*/
+
+section.formcontato {
+    background-color: lightblue;
+}
+
+/*footeer*/
+
+section.footer {}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menú */
+
+    /*title*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+
+    /*Titulo*/
+
+    /*Sección sobre mi*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+    /*Contacto*/
+
+    /*Footer*/
+
+}
